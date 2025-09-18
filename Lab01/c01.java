@@ -7,5 +7,6 @@ public class c01 {
         System.out.print("Ingresa tu nombre: ");
         nom = sc.nextLine();
         System.out.println("Bienvenido a Java, " + nom + "!");
+        sc.close();
     }
 }
