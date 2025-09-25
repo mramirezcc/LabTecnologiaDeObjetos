@@ -30,5 +30,4 @@ int main() {
 
     countChange(money, list, listSize);
 
-    std::cout << listSize << std::endl;
 }
