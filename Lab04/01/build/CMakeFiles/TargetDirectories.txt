@@ -1,0 +1,5 @@
+/home/mramirezcc/repos/LabTecnologiaDeObjetos/Lab04/01/build/CMakeFiles/SelectorColores.dir
+/home/mramirezcc/repos/LabTecnologiaDeObjetos/Lab04/01/build/CMakeFiles/edit_cache.dir
+/home/mramirezcc/repos/LabTecnologiaDeObjetos/Lab04/01/build/CMakeFiles/rebuild_cache.dir
+/home/mramirezcc/repos/LabTecnologiaDeObjetos/Lab04/01/build/CMakeFiles/SelectorColores_autogen_timestamp_deps.dir
+/home/mramirezcc/repos/LabTecnologiaDeObjetos/Lab04/01/build/CMakeFiles/SelectorColores_autogen.dir
