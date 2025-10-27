@@ -1,29 +1,21 @@
-cmake_minimum_required(VERSION 3.16)
-project(SelectorColores)
+cmake_minimum_required(VERSION 3.10)
+project(Lab06_01)
 
-# Configurar para usar MOC automáticamente
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOMOC_RELAXED_MODE ON)
-
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
-
+# Configurar estándar de C++
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Flags del compilador
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
 
+# Incluir directorios
 include_directories(include)
 
-# Archivos fuente
-set(SOURCES
-    src/main.cpp
-    src/VentanaColores.cpp
-)
+# Buscar archivos fuente
+file(GLOB SOURCES "src/*.cpp")
 
-# Archivos de cabecera (importante que estén aquí para MOC)
-set(HEADERS
-    include/VentanaColores.h
-)
+# Crear ejecutable
+add_executable(main ${SOURCES})
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
-
-target_link_libraries(${PROJECT_NAME} Qt6::Core Qt6::Widgets)
+# Opcional: Configurar nombre del ejecutable (si quieres mantener 'main')
+# set_target_properties(main PROPERTIES OUTPUT_NAME "main")
